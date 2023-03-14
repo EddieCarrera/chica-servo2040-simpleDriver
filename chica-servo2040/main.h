@@ -27,6 +27,9 @@
 #define GPIO_HIGH_MASK		0xFFFFFFFF
 #define GPIO_LOW_MASK		0x00
 
+/* Miscellaneous */
+#define MAX_COUNT_VALUE		127
+
 /*******************************************************************************
  * Constants
  ******************************************************************************/
