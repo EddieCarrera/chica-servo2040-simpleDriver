@@ -35,7 +35,6 @@ The two most recommend servos to be used for this project are the [ZOSKAY 35kg c
 All 3D printed designs, BOM, wiring guides, and build information for the hexapod can be found on Make Your Pet's [hexapod repository](https://github.com/MakeYourPet/hexapod).
 
 # Software
-
 The hexapod driver application is compliant with the Chica server application and follows the [Chica servo communication protocol specifications](https://docs.google.com/document/d/1mZwbWAyVBaSGiShjaIyb4V5swsjEJnEGjClIcWYX3S0/edit).
 
 ## Features
@@ -50,8 +49,7 @@ For redundancy, the application will also disable PWM signal outputs on all serv
 ### Tools
 The Chica server application requires servo calibration values as input to its config.txt file to improve servo positioning accuracy as demonstrated in MYP's [servo calibration video](https://www.youtube.com/watch?v=UMUeKFPptU4).
 
-The ServoCalibration directory contains _servoCalibration.uf2_, along with the .stl files for the physical components needed for calibration (provided by MYP). This useful program streamlines the PWM value acquisition process for config.txt. A table will be produced at the end of the program, which you can copy or take a screenshot for later. All done without needing to buy a seperate servo calibrator!
-
+The ServoCalibration directory contains _servoCalibration.uf2_, along with the .stl files for the physical components needed for calibration (provided by MYP). This useful program streamlines the PWM value acquisition process for config.txt. A table will be produced at the end of the program, which you can copy or take a screenshot for later. All done without needing to buy a seperate servo calibrator! [A tutorial video for using servoCalibration.uf2 can be found here](https://youtu.be/w5ZRXiZLpTk).
 
 # Development 
 ## Dependencies 

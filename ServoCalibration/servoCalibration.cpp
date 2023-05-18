@@ -129,7 +129,7 @@ int main() {
 					}
 				case KEY_LEFT:
 					{
-						currPWM += 20;
+						currPWM += 10;
 						break;
 					}
 				default:
@@ -208,13 +208,9 @@ int main() {
 	printf(" All servos are now centered with the calibrated average value found.\r\n"
 		   " Please visually inspect that all servos are exactly centered at 90 degrees.\r\n"
 		   " If not, calibration process should be repeated to find correct center PWM value\r\n");
-
-	/* Disable Servos */
-	servos.disable_all();
-	
 	printf("\r\n");
 	printf("\r\n");
 	printf("\r\n");
-	exit(EXIT_SUCCESS);
+	return 1;
 }
 	
