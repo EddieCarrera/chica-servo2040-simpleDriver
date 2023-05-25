@@ -22,6 +22,8 @@ using namespace servo;
 #define MIN_PULSE_VALUE	500
 #define MAX_PULSE_VALUE 2500
 
+#define RELAY_GPIO_PIN	26
+
 /* Create an array of servo pointers */
 const int START_PIN = servo2040::SERVO_1; 	// Can be changed to only calibrate a 
 const int END_PIN = servo2040::SERVO_18;	// a group of servos
@@ -42,6 +44,9 @@ bool calibState = 0; // 0:-45, 1:+45
 
 int main() {
 	stdio_init_all();
+	gpio_init(RELAY_GPIO_PIN); 
+    gpio_set_dir(RELAY_GPIO_PIN, GPIO_OUT);
+	gpio_put(RELAY_GPIO_PIN, true);
 	
 	/* Initialize the servo cluster */
 	servos.init();
